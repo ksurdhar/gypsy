@@ -1,0 +1,15 @@
+{
+  "name": "gypsy",
+  "version": "1.0.0",
+  "description": "tell me where the music is at gypsy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cowboy jeff and captain brown",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "superagent": "^4.1.0"
+  }
+}
