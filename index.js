@@ -1,7 +1,19 @@
 const request = require('superagent')
 const express = require('express')
-const app = express()
+const mongodb = require('mongodb');
 const config = require('./config.js')
+
+const app = express()
+const client = mongodb.MongoClient;
+
+client.connect(config.DB_URL, function(err, db) {
+    if(err) {
+        console.log('database is not connected')
+    }
+    else {
+        console.log('connected!!')
+    }
+});
 
 app.get('/', (req, res) => {
   request
